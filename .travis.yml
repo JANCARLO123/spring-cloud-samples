@@ -1,0 +1,8 @@
+language: java
+jdk: openjdk8
+branches:
+  only:
+    - config
+script:
+  - cd config-server && mvn test
+  - cd config-client && mvn test
